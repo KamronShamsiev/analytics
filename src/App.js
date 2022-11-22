@@ -1,6 +1,17 @@
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import Layout from './Layout/Layout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
-    <h1>Analytics</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout></Layout>} />
+        <Route path="/suppliers" element={<Layout></Layout>} />
+        <Route path="/products" element={<Layout></Layout>} />
+        <Route path="/offers" element={<Layout></Layout>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
