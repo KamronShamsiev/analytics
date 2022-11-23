@@ -6,7 +6,12 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <NavigationBar />
-      <S.ContentLayout>{children}</S.ContentLayout>
+      <S.ContentLayout>
+        <S.ContentHeader>
+          <S.HeaderImage src="./assets/images/microsoft.png" />
+        </S.ContentHeader>
+        {children}
+      </S.ContentLayout>
     </S.LayoutWrapper>
   );
 };
