@@ -16,6 +16,7 @@ export const ContentLayout = styled.div`
       rgba(138, 138, 138, 0.2) 80.3%
     ),
     #f1f1f1;
+  overflow-x: hidden;
 `;
 
 export const ContentHeader = styled.div`
