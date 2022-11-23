@@ -27,7 +27,6 @@ export const NavbarIcon = styled.img`
 `;
 
 export const NavbarTitle = styled.p`
-  font-family: Source Sans Pro, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: ${Colors.white};

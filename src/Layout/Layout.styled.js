@@ -20,6 +20,7 @@ export const ContentLayout = styled.div`
 
 export const ContentHeader = styled.div`
   width: 100%;
+  height: 50px;
   margin: 14px 0 6px 0;
   display: flex;
   justify-content: flex-end;

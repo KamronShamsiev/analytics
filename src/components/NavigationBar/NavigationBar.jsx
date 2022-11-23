@@ -17,6 +17,7 @@ const NavigationBar = () => {
       {NavbarItemsArray.map(({ title, icon, link }) => {
         return (
           <S.NavbarItemWrapper
+            key={title}
             to={link}
             className={({ isActive }) => isActive && 'active'}
           >
