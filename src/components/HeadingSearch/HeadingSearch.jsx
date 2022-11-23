@@ -1,6 +1,7 @@
 import * as S from './HeadingSearch.styled';
 import FilterButton from '../FilterButton/FilterButton';
 import { useState } from 'react';
+import SearchInput from '../SearchInput/SearchInput';
 
 const ButtonsArray = [
   { title: 'Current month' },
@@ -8,17 +9,13 @@ const ButtonsArray = [
   { title: '1 year' },
 ];
 
-const HeadingSearch = () => {
+const HeadingSearch = ({ title }) => {
   const [activeButton, setActiveButton] = useState('Current month');
-
-  const activeHandler = (title) => setActiveButton(title);
-
-  console.log(activeButton);
 
   return (
     <S.Wrapper>
       <S.TitleWrapper>
-        <S.Title>Nodes</S.Title>
+        <S.Title>{title}</S.Title>
         <S.AccountWrapper>
           <S.AccountIcon src="assets/icons/account.png" alt="account" />
           <S.AccountTitle>Account</S.AccountTitle>
@@ -40,6 +37,7 @@ const HeadingSearch = () => {
       </S.FilterWrapper>
       <S.SearchWrapper>
         <FilterButton title="All Nodes" isActive />
+        <SearchInput title={title} />
       </S.SearchWrapper>
     </S.Wrapper>
   );

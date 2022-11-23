@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 200px;
-  padding: 28px;
+  height: 210px;
+  padding: 28px 28px 26px 28px;
   border-radius: 27px;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
 `;

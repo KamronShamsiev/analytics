@@ -10,6 +10,7 @@ export const ButtonWrapper = styled.button`
   border-radius: 16px;
   cursor: pointer;
   margin: 0 5px;
+  height: 38px;
 `;
 
 export const ButtonTitle = styled.p`
